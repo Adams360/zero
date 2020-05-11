@@ -1,0 +1,294 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+  @media screen and (max-width: 1920px) {
+    html {
+      font-size: 55%; } }
+  @media screen and (max-width: 1536px) {
+    html {
+      font-size: 47%; } }
+  @media screen and (max-width: 1024px) {
+    html {
+      font-size: 70%; } }
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 40%; } }
+
+body {
+  font-family: "almoni-tzar", sans-serif;
+  color: #14499e;
+  font-size: 1.6em;
+  line-height: 1;
+  direction: rtl; }
+
+.sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0; }
+
+@font-face {
+  font-family: 'almoni-neue';
+  font-weight: 200;
+  /*(ulterlight)*/
+  font-style: normal;
+  src: url("../../assets/fonts/almoni-neue-tzar-aaa-200.woff") format("woff"); }
+
+@font-face {
+  font-family: 'almoni-tzar';
+  font-weight: 400;
+  /*(light)*/
+  font-style: normal;
+  src: url("../../assets/fonts/almoni-neue-tzar-aaa-400.woff") format("woff"); }
+
+@font-face {
+  font-family: 'almoni-tzar';
+  font-weight: 500;
+  /*(regular)*/
+  font-style: normal;
+  src: url("../../assets/fonts/almoni-neue-aaa-300.woff") format("woff"); }
+
+.heading {
+  font-family: "almoni-neue", sans-serif;
+  font-size: 6rem;
+  font-weight: 400; }
+
+.form-heading {
+  font-family: "almoni-tzar", sans-serif;
+  font-size: 7rem;
+  font-weight: 400;
+  margin-bottom: 2rem; }
+
+.para {
+  font-size: 3rem;
+  margin: 2rem 0;
+  max-width: 57rem;
+  margin: 2rem 0; }
+  @media screen and (max-width: 768px) {
+    .para {
+      margin: 2rem auto; } }
+  .para--lg {
+    font-weight: 400; }
+
+.strong {
+  font-weight: 700; }
+
+.wrapper {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  background-color: #fff; }
+  @media screen and (max-width: 1024px) {
+    .wrapper {
+      display: block; } }
+  .wrapper .form-bg {
+    background-color: #E3E6E8;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3; }
+    @media screen and (max-width: 1024px) {
+      .wrapper .form-bg {
+        display: none; } }
+  .wrapper .content-box {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    padding: 3rem 6rem; }
+    .wrapper .content-box .logo {
+      max-width: 26rem;
+      display: block;
+      margin-right: -30px; }
+      @media screen and (max-width: 768px) {
+        .wrapper .content-box .logo {
+          margin: 0 auto; } }
+    @media screen and (max-width: 1024px) {
+      .wrapper .content-box {
+        grid-column: 1 / 3; } }
+    @media screen and (max-width: 768px) {
+      .wrapper .content-box {
+        text-align: center; }
+        .wrapper .content-box .logo {
+          margin: 0 auto; } }
+    .wrapper .content-box .bullets {
+      list-style-type: none;
+      text-align: right;
+      display: flex;
+      justify-content: flex-start;
+      max-width: 90rem;
+      margin: 0 auto;
+      margin-top: 4rem;
+      flex-wrap: wrap; }
+      @media screen and (max-width: 768px) {
+        .wrapper .content-box .bullets {
+          justify-content: center; } }
+      .wrapper .content-box .bullets__item {
+        flex: 1 1 50%;
+        position: relative;
+        font-size: 2.8rem;
+        max-width: 20rem;
+        padding-top: 1rem;
+        margin: 3rem 2rem; }
+        .wrapper .content-box .bullets__item:first-child {
+          margin-right: 0; }
+        @media screen and (max-width: 768px) {
+          .wrapper .content-box .bullets__item {
+            font-size: 3.2rem; } }
+        .wrapper .content-box .bullets__item::before {
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 0;
+          background-color: #d500f9;
+          width: 22px;
+          height: 3px; }
+  .wrapper .img-box {
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+    place-self: center;
+    text-align: center;
+    position: relative;
+    z-index: 20; }
+    @media screen and (max-width: 1024px) {
+      .wrapper .img-box {
+        display: none; } }
+    .wrapper .img-box img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      max-width: 60rem;
+      margin: 0 auto;
+      object-fit: cover; }
+    .wrapper .img-box .hashtag {
+      display: inline-block;
+      position: absolute;
+      top: 7.5rem;
+      right: -14.3rem;
+      transform: rotate(-90deg);
+      font-family: "almoni-neue", sans-serif;
+      font-size: 6rem;
+      font-weight: 200; }
+    .wrapper .img-box__contact {
+      background-color: #fff;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem .5rem; }
+      .wrapper .img-box__contact .phone-number {
+        text-decoration: none;
+        font-size: 3.8rem;
+        color: #14499e;
+        font-weight: 400;
+        margin-right: 2rem;
+        white-space: nowrap; }
+      .wrapper .img-box__contact .social-icons {
+        display: flex;
+        text-align: center; }
+        .wrapper .img-box__contact .social-icons img {
+          width: 2.4rem;
+          height: 2.4rem;
+          margin: 0 .8rem; }
+  .wrapper .form-box {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    z-index: 10;
+    overflow: hidden;
+    position: relative;
+    background-color: #E3E6E8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .wrapper .form-box__contact {
+      display: none; }
+      @media screen and (max-width: 768px) {
+        .wrapper .form-box__contact {
+          display: flex;
+          background-color: #fff;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          padding: 2rem; } }
+      .wrapper .form-box__contact .icons {
+        display: flex;
+        text-align: center; }
+        .wrapper .form-box__contact .icons img {
+          width: 3.5rem;
+          height: 3.5rem;
+          margin: 0 .8rem; }
+      .wrapper .form-box__contact .phone-number {
+        text-decoration: none;
+        font-size: 5rem;
+        color: #14499e;
+        font-weight: 400;
+        margin-right: 2rem;
+        white-space: nowrap; }
+    @media screen and (max-width: 1024px) {
+      .wrapper .form-box {
+        min-height: 73rem;
+        height: 100%; } }
+    @media screen and (max-width: 768px) {
+      .wrapper .form-box {
+        grid-column: 1 / 3; } }
+    .wrapper .form-box .form {
+      padding: 6rem; }
+      .wrapper .form-box .form__checkbox, .wrapper .form-box .form label {
+        cursor: pointer; }
+      .wrapper .form-box .form__inputs {
+        display: flex;
+        justify-content: space-between; }
+        @media screen and (max-width: 1024px) {
+          .wrapper .form-box .form__inputs {
+            flex-direction: column; } }
+      .wrapper .form-box .form__group {
+        flex: 1; }
+        .wrapper .form-box .form__group:nth-child(even) {
+          margin: 0 3rem; }
+          @media screen and (max-width: 1024px) {
+            .wrapper .form-box .form__group:nth-child(even) {
+              margin: 3rem 0; } }
+      .wrapper .form-box .form__control {
+        width: 100%;
+        border: 0;
+        font-size: 2rem;
+        padding: .7rem;
+        box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+        color: #14499e; }
+        .wrapper .form-box .form__control::placeholder {
+          color: inherit; }
+      .wrapper .form-box .form__controls {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1.8rem;
+        font-size: 2rem; }
+        @media screen and (max-width: 768px) {
+          .wrapper .form-box .form__controls {
+            flex-direction: column;
+            justify-content: center; } }
+      .wrapper .form-box .form__btn {
+        background-color: #d500f9;
+        color: #fff;
+        border: 0;
+        padding: .8rem 1rem;
+        font-size: 2rem;
+        min-width: 27.9rem;
+        border-radius: 50px;
+        cursor: pointer; }
+        @media screen and (max-width: 768px) {
+          .wrapper .form-box .form__btn {
+            margin-top: 2rem; } }

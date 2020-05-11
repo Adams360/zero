@@ -1,0 +1,34 @@
+.heading {
+    font-family: $font-2;
+    font-size: 6rem;
+    font-weight: 400;
+}
+
+
+.form-heading {
+    font-family: $font-1;
+    font-size: 7rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.para {
+    font-size: 3rem;
+    margin: 2rem 0;
+    max-width: 57rem;
+
+    margin: 2rem 0;
+
+    @include respond(sm) {
+        margin: 2rem auto;
+    }
+
+    &--lg {
+        font-weight: 400;
+    }
+}
+
+.strong {
+    font-weight: 700;
+
+}
