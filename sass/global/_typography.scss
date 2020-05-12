@@ -1,5 +1,5 @@
 .heading {
-    font-family: $font-2;
+    font-family: $font-1;
     font-size: 6rem;
     font-weight: 400;
 }
@@ -13,9 +13,10 @@
 }
 
 .para {
-    font-size: 3rem;
+    font-size: 2.6rem;
     margin: 2rem 0;
-    max-width: 57rem;
+    max-width: 85rem;
+    line-height: 1.2;
 
     margin: 2rem 0;
 
@@ -29,6 +30,6 @@
 }
 
 .strong {
-    font-weight: 700;
+    font-weight: bold;
 
 }
