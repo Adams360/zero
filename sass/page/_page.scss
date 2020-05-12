@@ -37,6 +37,10 @@
             padding: 5rem 10rem;
         }
 
+        @include respond(sm) {
+            padding: 5rem 4rem;
+        }
+
 
         .logo {
             max-width: 26rem;
@@ -67,7 +71,7 @@
             text-align: right;
             display: flex;
             justify-content: flex-start;
-            max-width: 90rem;
+            max-width: 102rem;
             margin: 0 auto;
             margin-top: 4rem;
             @include respond(md) {
@@ -224,8 +228,12 @@
         padding-right: 10rem;
 
         @include respond(md) {
-            padding: 5rem 15rem;
+            padding: 5rem 7rem;
+        }
+        
+        @include respond(sm) {
             text-align: center;
+            padding: 5rem 7rem;
         }
         
 
